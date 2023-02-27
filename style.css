@@ -26,6 +26,7 @@ body {
     grid-auto-flow: column;
     align-items: center;
     justify-items: center;
+    
 }
 
 #sidebar > ul {
@@ -46,7 +47,7 @@ body {
     */
     --grid-layout-gap: 0px;
     --grid-column-count: 2;
-    --grid-item--min-width: 300px;
+    --grid-item--min-width: 350px;
 
     /**
     * Calculated values.
@@ -88,6 +89,8 @@ body {
 
 #hithere {
     display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 #prof-right {
@@ -120,6 +123,7 @@ body {
 .cards {
     border: 1px solid blue;
     min-height: 200px;
+    margin: 5px;
 }
 
 #announcements {
