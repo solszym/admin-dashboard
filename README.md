@@ -1,3 +1,3 @@
 # admin-dashboard
 
-Admin dashboard example created using plain HTML and CSS (mainly cssgrid)
+Size responsive admin dashboard example created using plain HTML and CSS (cssgrid training).

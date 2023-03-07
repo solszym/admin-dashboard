@@ -207,7 +207,7 @@ body {
 #content {
     grid-column: 2 / 3;
     display: grid;
-    gap: 5px;
+    gap: 10px;
     grid-template-columns: 3fr 1fr;
     grid-template-rows: 1fr 1fr;
     background-color: rgba(209, 234, 255, 0.6); 
@@ -226,7 +226,7 @@ body {
 
 #projects {
     display: grid;
-    gap: 5px;
+    gap: 10px;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     
 }
@@ -234,7 +234,7 @@ body {
 
 .cards {
     /* border: 1px solid blue; */
-    min-height: 200px;
+    min-height: 150px;
     margin: 5px;
     box-shadow: 13px 13px 6px -12px rgba(175, 175, 175, 1);
     border-radius: 10px;
@@ -284,13 +284,15 @@ body {
     transform: scale(1.2);
 }
 
-#announcements {
+#right-content {
     grid-column: 2 / 3;
-    grid-row: 1 / 2;
-    display: grid;
-    grid-template-rows: auto 1fr;
-    margin: 5px;
+    grid-row: 1 / 4;
+    display: flex;
+    flex-direction: column;
+    margin-left: 10px;
 }
+
+
 
 #announ-title {
     font-size: 20px;
@@ -299,21 +301,22 @@ body {
 
 #announ-content {
     background-color: white;
+    
 }
 
-#announcements > ul {
+#announcements ul {
     display: grid;
     grid-template-rows: repeat(3, 1fr);
     align-items: center;
+    margin: 5px;
+    list-style-type: none;
+    padding: 30px 15px;
+    gap: 20px;
+    
 }
 
-#trending {
-    grid-column: 2 / 3;
-    grid-row: 2 / 3;
-    display: grid;
-    grid-template-rows: auto 1fr;
-    margin: 5px;
-}
+
+
 
 #trending-title {
     font-size: 20px;
@@ -324,10 +327,14 @@ body {
     background-color: white;
 }
 
-#trending > ul {
+#trending ul {
     display: grid;
     grid-template-rows: repeat(4, 1fr);
     align-items: center;
+    margin: 5px;
+    list-style-type: none;
+    padding: 30px 15px;
+    gap: 25px;
 }
 
 button {
@@ -352,3 +359,51 @@ button:hover {
     border-radius: 10px;
     box-shadow: 13px 13px 6px -12px rgba(175, 175, 175, 1);
 }
+
+.dog-container {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 10px;
+}
+
+.dog-container img {
+    height: 45px;
+    object-fit: cover;
+    border-radius: 50px;
+}
+
+.dog-text {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.dog-name {
+    font-weight: 400;
+    font-size: 13px;
+}
+
+.dog-content {
+    font-weight: 300;
+    color: grey;
+    font-size: 13px;
+}
+
+.announcement {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.announcement .header {
+    font-weight: 600;
+    font-size: 13px;
+}
+
+.announcement .content {
+    font-size: 11px;
+    font-weight: 300;
+    color: grey;
+}
+
